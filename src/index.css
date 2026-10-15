@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@import "@fontsource/plus-jakarta-sans/400.css";
+@import "@fontsource/plus-jakarta-sans/500.css";
+@import "@fontsource/plus-jakarta-sans/600.css";
+@import "@fontsource/plus-jakarta-sans/700.css";
+
+@theme {
+  --color-background: #0f172a;
+  --color-surface: #111827;
+  --color-card: #1e293b;
+  --color-border: #334155;
+  --color-accent: #2563eb;
+  --color-foreground: #f8fafc;
+  --color-muted: #94a3b8;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
