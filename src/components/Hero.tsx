@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 
 function Hero() {
   return (
-    <section className="mx-auto flex max-w-7xl flex-col items-center px-5 py-24 md:py-34 text-center">
+    <section className="mx-auto flex max-w-7xl flex-col items-center px-5 py-24 md:py-40 text-center">
       <p className="mb-4 uppercase text-sm sm:text-base text-accent font-semibold tracking-widest">
         It support made simple
       </p>
