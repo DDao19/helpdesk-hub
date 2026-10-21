@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Headset, Menu, X } from "lucide-react";
 
 function Navbar() {
@@ -7,40 +8,42 @@ function Navbar() {
   return (
     <nav className="relative w-full border-b border-slate-700">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between p-5">
-        <a
-          href="/"
+        <Link
+          to="/"
           className="flex items-center gap-2 text-xl font-bold focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent focus-visible:rounded-md"
         >
           <Headset size={30} />
           <span className="text-2xl">
             Helpdesk <span className="text-accent">Hub</span>
           </span>
-        </a>
+        </Link>
+
+        {/* Navigation links */}
         <div className="hidden md:flex items-center gap-8">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent focus-visible:rounded-md"
           >
             Home
-          </a>
-          <a
-            href="/submit-ticket"
+          </Link>
+          <Link
+            to="/tickets/new"
             className="transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent focus-visible:rounded-md"
           >
             Submit Ticket
-          </a>
-          <a
-            href="/my-tickets"
+          </Link>
+          <Link
+            to="/my-tickets"
             className="transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent focus-visible:rounded-md"
           >
             My Ticket
-          </a>
-          <a
-            href="/sign-in"
+          </Link>
+          <Link
+            to="/sign-in"
             className="transition-colors hover:text-accent focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent focus-visible:rounded-md"
           >
             Sign In
-          </a>
+          </Link>
         </div>
 
         {/* Mobile menu button */}
