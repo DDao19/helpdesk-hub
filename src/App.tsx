@@ -1,12 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import TicketSubmission from "./pages/TicketSubmission";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
-      <Hero />
-    </>
+
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/tickets/new" element={<TicketSubmission />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
