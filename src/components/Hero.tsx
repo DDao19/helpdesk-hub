@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 function Hero() {
@@ -15,13 +16,13 @@ function Hero() {
         quickly and easily.
       </p>
 
-      <button
-        type="button"
-        className="mt-8 inline-flex items-center gap-2 rounded-lg bg-accent px-6 py-3 font-semibold text-forground transition-colors hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
+      <Link
+        to="/tickets/new"
+        className="mt-8 inline-flex items-center gap-2 rounded-lg bg-accent px-4 py-3 font-semibold text-foreground transition-colors hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent"
       >
         Submit a Ticket
         <ArrowRight size={18} />
-      </button>
+      </Link>
     </section>
   );
 }

@@ -77,34 +77,34 @@ function Navbar() {
       {/* Mobile menu */}
       {isMenuOpen && (
         <div className="absolute left-0 top-full flex w-full flex-col bg-border md:hidden mobile-menu-enter">
-          <a
-            href="/"
+          <Link
+            to="/"
             onClick={() => setIsMenuOpen(false)}
             className="px-6 py-4 border-b border-foreground/10 transition-colors hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             Home
-          </a>
-          <a
-            href="/submit-ticket"
+          </Link>
+          <Link
+            to="/tickets/new"
             onClick={() => setIsMenuOpen(false)}
             className="px-6 py-4 border-b border-foreground/10 transition-colors hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             Submit Ticket
-          </a>
-          <a
-            href="/my-tickets"
+          </Link>
+          <Link
+            to="/my-tickets"
             onClick={() => setIsMenuOpen(false)}
             className="px-6 py-4 border-b border-foreground/10 transition-colors hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             My Tickets
-          </a>
-          <a
-            href="/sign-in"
+          </Link>
+          <Link
+            to="/sign-in"
             onClick={() => setIsMenuOpen(false)}
             className="px-6 py-4 border-foreground/10 transition-colors hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
           >
             Sign In
-          </a>
+          </Link>
         </div>
       )}
     </nav>
